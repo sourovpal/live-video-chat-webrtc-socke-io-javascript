@@ -27,7 +27,7 @@ navigator.mediaDevices.getUserMedia({ video: true, audio: true })
   .catch(error => console.log(error));
 
 const initConnection = (stream) => {
-  const socket = io('/');
+  const socket = io();
   let localConnection;
   let remoteConnection;
   let localChannel;
